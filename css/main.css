@@ -322,3 +322,15 @@
     opacity: 1;
   }
 }
+
+.warm {
+  background: linear-gradient(to right, #ccfcb3, #f9f7c0);
+}
+
+.cold {
+  background: linear-gradient(to right, #b5eefc, #dddad4);
+}
+
+.hot {
+  background: linear-gradient(to right, #ffdca0, pink);
+}
