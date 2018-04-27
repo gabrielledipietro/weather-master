@@ -84,7 +84,7 @@
 .brown-small {
   font-family: "brown";
   font-size: 13pt;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 @media (min-width: 360px) {
