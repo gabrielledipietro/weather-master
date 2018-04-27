@@ -1,0 +1,278 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+@font-face {
+  font-family: "brown";
+  src: url(../fonts/brown-bold.otf);
+}
+
+@font-face {
+  font-family: "chronicle";
+  src: url(../fonts/chronicle.otf);
+}
+
+@font-face {
+  font-family: "brown-slant";
+  src: url(../fonts/brown-slant.otf);
+}
+
+.brown-bold {
+  font-family: "chronicle";
+  font-size: 18pt;
+  line-height: 1.2;
+}
+
+@media (min-width: 530px) {
+  .brown-bold {
+    font-size: 25pt;
+  }
+}
+
+@media (min-width: 880px) {
+  .brown-bold {
+    font-size: 30pt;
+  }
+}
+
+.slant {
+  font-family: "brown-slant";
+  font-size: 25pt;
+}
+@media (min-width: 420px) {
+  .slant {
+    font-size: 35pt;
+  }
+}
+@media (min-width: 770px) {
+  .slant {
+    font-size: 40pt;
+  }
+}
+@media (min-width: 960px) {
+  .slant {
+    font-size: 50pt;
+  }
+}
+
+.slantbottom {
+  font-family: "brown-slant";
+  font-size: 12pt;
+  line-height: 0.5;
+}
+
+@media (min-width: 530px) {
+  .slantbottom {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 1145px) {
+  .slantbottom {
+    font-size: 19pt;
+  }
+}
+
+.back {
+  background-color: #efe6eb;
+}
+/* .... */
+.bg-x {
+  background: linear-gradient(to right, #ff5689, #40b3f9, #fc9b25, #6ae2ed);
+}
+
+.brown-small {
+  font-family: "brown";
+  font-size: 13pt;
+  line-height: 0.5;
+}
+
+@media (min-width: 360px) {
+  .brown-small {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 530px) {
+  .brown-small {
+    font-size: 19pt;
+  }
+}
+
+@media (min-width: 960px) {
+  .brown-small {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 1190px) {
+  .brown-small {
+    font-size: 19pt;
+  }
+}
+
+.chronicle {
+  font-family: "chronicle";
+  font-size: 13pt;
+  line-height: 0.5;
+}
+
+@media (min-width: 360px) {
+  .chronicle {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 530px) {
+  .chronicle {
+    font-size: 19pt;
+  }
+}
+
+@media (min-width: 960px) {
+  .chronicle {
+    font-size: 15pt;
+  }
+}
+
+@media (min-width: 1145px) {
+  .chronicle {
+    font-size: 19pt;
+  }
+}
+
+@media (min-width: 1145px) {
+  .chronicle {
+    font-size: 19pt;
+  }
+}
+
+.chronicle2 {
+  font-family: "chronicle";
+  font-size: 100pt;
+  line-height: 0.5;
+  z-index: -4;
+  position: relative;
+}
+
+@media (min-width: 450px) {
+  .chronicle2 {
+    font-size: 150pt;
+  }
+}
+
+@media (min-width: 525px) {
+  .chronicle2 {
+    font-size: 200pt;
+  }
+}
+
+@media (min-width: 630px) {
+  .chronicle2 {
+    font-size: 230pt;
+  }
+}
+
+/* @media (min-width: 770px) {
+  .chronicle2 {
+    font-size: 330pt;
+  }
+} */
+
+@media (min-width: 980px) {
+  .chronicle2 {
+    font-size: 250pt;
+  }
+}
+
+@media (min-width: 1060px) {
+  .chronicle2 {
+    font-size: 280pt;
+  }
+}
+
+@media (min-width: 1145px) {
+  .chronicle2 {
+    font-size: 300pt;
+  }
+}
+
+@media (min-width: 1320px) {
+  .chronicle2 {
+    font-size: 350pt;
+  }
+}
+
+@media (min-width: 1475px) {
+  .chronicle2 {
+    font-size: 400pt;
+  }
+}
+
+.chronicle3 {
+  font-family: "chronicle";
+  font-size: 100pt;
+  line-height: 0.5;
+  z-index: -4;
+  position: relative;
+}
+
+@media (min-width: 980px) {
+  .chronicle3 {
+    font-size: 30pt;
+  }
+}
+
+@media (min-width: 1145px) {
+  .chronicle3 {
+    font-size: 110pt;
+  }
+}
+
+@media (min-width: 1320px) {
+  .chronicle3 {
+    font-size: 130pt;
+  }
+}
+
+@media (min-width: 1475px) {
+  .chronicle3 {
+    font-size: 150pt;
+  }
+}
+
+.degreebig {
+  font-family: "chronicle";
+  font-size: 200pt;
+
+  z-index: -4;
+  position: relative;
+}
+
+.pads {
+  padding-bottom: 20px;
+}
+
+.bg-x {
+  background: purple;
+}
+
+.color-grad {
+  background: #a463f2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .glow {
+  transition: opacity 0.15s ease-in;
+}
+.glow:hover .glow:focus {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+} */
+
+.textimage {
+  background-color: blue;
+  background-position: center center;
+  background-size: cover;
+}
