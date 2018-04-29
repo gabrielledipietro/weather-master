@@ -14,7 +14,7 @@ const APIKEY = "30f052d8e593696bfbccd1d1654e8522";
 // ============================================================
 
 // Search
-let area = document.querySelector("#area").value || "Boston";
+let area = document.querySelector("#area").value || "Heck";
 const locationSearch = document.querySelector("#location-search");
 
 // Location
@@ -119,7 +119,7 @@ async function getWeather(city, key, units = "imperial") {
 // ============================================================
 
 locationSearch.addEventListener("submit", function(e) {
-  area = document.querySelector("#area").value || "Boston";
+  area = document.querySelector("#area").value || "Heck";
 
   // Run the getWeather function
   getWeather(area, APIKEY);
