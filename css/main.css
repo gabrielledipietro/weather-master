@@ -2,6 +2,16 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+html body {
+  height: 100%;
+  min-height: 100%;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+
 @font-face {
   font-family: "brown";
   src: url(../fonts/brown-bold.otf);
@@ -317,18 +327,6 @@
   }
 }
 
-.warm {
-  background: linear-gradient(to right, #ccfcb3, #f9f7c0);
-}
-
-.cold {
-  background: linear-gradient(to right, #b5eefc, #dddad4);
-}
-
-.hot {
-  background: linear-gradient(to right, #ffdca0, pink);
-}
-
 .tempcenter {
   /* background: center center no-repeat; */
   height: 100%;
@@ -347,7 +345,9 @@
   height: 100%;
   background-repeat: repeat;
   background-size: cover;
-  z-index: -4;
+  /* z-index: -4; */
+  position: absolute;
+  bottom: 0;
 
   /* position: fixed; */
 }
@@ -365,20 +365,23 @@
   background-repeat: repeat;
   background-size: cover;
   background-position: center center;
+  background-color: #cedbef;
   /* background-attachment: fixed; */
 }
 
 .clouds .icon {
   background-image: url(/images/clouds2-01.svg);
-  /* display: block; */
-  /* height: 300px; */
   width: 100%;
   height: 100%;
-  /* padding-top: 60px; */
-  background-repeat: repeat;
+  opacity: 40%;
+
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-repeat: repeat;
+  background-color: #cedbef;
+
+  /* z-index: -1000; */
 
   /* position: sticky; */
 }
@@ -388,32 +391,35 @@
   width: 100%;
   height: 100%;
   opacity: 40%;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: repeat;
+  background-color: #ffffa8;
 }
 /* still need to make icons */
 .thunderstorm .icon {
   background-image: url(/images/thunder-09.svg);
   width: 100%;
   height: 100%;
-  /* padding-top: 60px; */
-  background-repeat: repeat;
+  opacity: 40%;
   background-size: cover;
   background-position: center center;
   /* background-attachment: fixed; */
+  background-repeat: repeat;
+  background-color: #ffffa8;
 }
 
 .drizzle .icon {
   background-image: url(/images/rain-02.svg);
   width: 100%;
   height: 100%;
-  /* padding-top: 60px; */
-  background-repeat: repeat;
+  opacity: 40%;
   background-size: cover;
   background-position: center center;
   /* background-attachment: fixed; */
+  background-repeat: repeat;
+  background-color: #ffffa8;
 }
 
 .snow .icon {
@@ -425,14 +431,46 @@
   background-position: center center;
   background-attachment: fixed;
   background-repeat: repeat;
+  background-color: #ffffa8;
 }
 
 .atmosphere .icon {
-  background-image: url(/images/sun-03.svg);
+  background-image: url(/images/atmosphere-06.svg);
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: #ccefb8;
 }
 
 .dust .icon {
-  background-image: url(/images/sun-03.svg);
+  background-image: url(/images/dust-09.svg);
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-repeat: repeat;
+  background-color: #cebd9c;
+}
+
+.warm {
+  background: linear-gradient(to right, #ccfcb3, #f9f7c0);
+  z-index: 4;
+}
+
+.cold {
+  background: linear-gradient(to right, #b5eefc, #dddad4);
+  z-index: 4;
+}
+
+.hot {
+  background: linear-gradient(to right, #ffdca0, pink);
+  z-index: 4;
 }
 
 /* need to make everything responsive make the icons much bigger and have them on their own */
