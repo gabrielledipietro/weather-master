@@ -354,8 +354,8 @@
 }
 
 .icon {
-  width: 20vw;
-  height: 20vw;
+  width: 100vw;
+  height: 100vw;
   background-repeat: repeat;
   z-index: -4;
 
@@ -363,8 +363,8 @@
 }
 
 .clouds .icon {
-  background: url(/images/clouds2-05.svg);
-  display: block;
+  background-image: url(/images/clouds2-05.svg);
+  /* display: block; */
   /* height: 300px; */
   width: 100vw;
   height: 100vw;
