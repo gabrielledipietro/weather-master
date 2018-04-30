@@ -13,27 +13,30 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+<body=icon>
+
+
+
   <!-- <div class="textimage  aspect-ratio"> -->
   <!-- <div class="light-purple .bg-center z-1 chronicle2 contain">
 
     <p><span class=" h3 chronicle2 light-purple " <span id="temp"></span>°</span>
     </p> -->
 
+  <div class="icon mr0-ns">
+    <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+    <div class="bg-green white pa4 slantbottom fixed bottom-0 w-100">
+      and what the heck is the weather?
+    </div>
+    <div id="error" class="dn ml0 bg-hot-pink white pt4 brown-small fixed bottom-0 w-100">
+      hmm sorry, that's not a city we know......
+    </div>
 
-  <!-- If there is an error, this box is shown. 'dn' is the only required class -->
-  <div class="bg-green white pa4 slantbottom fixed bottom-0 w-100">
-    and what the heck is the weather?
-  </div>
-  <div id="error" class="dn bg-hot-pink white pa4 brown-small fixed bottom-0 w-100">
-    hmm sorry, that's not a city we know......
-  </div>
 
 
-
-  <!-- Search Box -->
-  <form id="location-search" class=" ">
-    <h1 class="flex flex-wrap tl-ns tc items-baseline f-headline lh-solid slant hot-pink ">
+    <!-- Search Box -->
+    <form id="location-search" class=" ">
+      <h1 class="flex fixed flex-wrap tl-ns tc items-baseline f-headline lh-solid slant hot-pink ">
           <span class="mr3-ns mr2 mb2 ph4-ns ml2">
             where <span class="flashit light-purple">
               the heck
@@ -41,69 +44,82 @@
           </span>
           <input type="text" id="area" value="Heck" class="flex-auto brown-bold outline mr4-ns ml4-ns mr4 mb0 ml4 mr7-l green w-50-ns w-100 ">
         </h1>
-  </form>
+    </form>
 
-  <!-- Content for app-->
-  <div class="flex flex-wrap pa4 pa3-ns ph5-ns4">
+    <!-- Content for app-->
+    <div class="flex flex-wrap pa4 pa3-ns ph5-ns">
 
 
-    <div class=" order-1 order-0-l ml5-l ml4-ns mr4-ns mr2 ml2 mr0-l tl-l tc brown-small hot-pink w-100 w-30-l tl mt0">
-      <div class="outline light-purple bg-x pa2 mb4 mt0 color-grad">
+      <div class="  order-1 mt7-l tc mt5-m mt3 order-0-l ml5-l ml4-ns mr4-ns mr2 ml2 mr0-l tl-l tc-m brown-small hot-pink w-100 w-30-l ">
+        <!-- <div class="outline light-purple bg-x pa2 mb4 mt0 color-grad">
         .............................
-      </div>
+      </div> -->
 
-      <span class=" h3 green">
+        <!-- <span class=" h3 green">
           Location
-        </span>
-      <p>City: <span class=" h3 chronicle light-purple ">
-      <span id="location-name"></span> </span>
-      </p>
-      <p>Country: <span class=" chronicle h3 light-purple "><span id="country"></span></span>
-      </p>
+        </span> -->
 
-      <div class="outline light-purple bg-x mb4 pa2 mt5-l mt5-m mt4 color-grad">
+
+
+
+        <p> <span class=" tc-m h3 brown-small hot-pink ">
+      <span id="location-name"></span></span>, <span class=" chronicle h3 tc-m light-purple "><span id="country"></span></span>
+        </p>
+
+        <!-- <div class="icon mr4 tc-m mr0-ns">
+      </div> -->
+        <!-- <div class="outline light-purple bg-x mb4 pa2 mt5-l mt5-m mt4 color-grad">
         .............................
-      </div>
+      </div> -->
 
-      <span class=" h3 green">
+        <!-- <span class=" h3 green">
           Weather
-        </span>
-      <p>Condition: <span class=" h3 chronicle light-purple " <span id="condition"></span></span>
-      </p>
-      <p>Description: <span class=" h3 chronicle light-purple " <span id="condition-description"></span></span>
-      </p>
-      <!-- <p>Wind Speed: <span class=" h3 pan chronicle light-purple " <span id="wind-speed"></span> mph</span>
+        </span> -->
+        <!-- <p>Condition: <span class=" h3 chronicle light-purple " <span id="condition"></span></span>
       </p> -->
 
-      <p>Wind Speed: <span class=" h3  chronicle light-purple " <span id="wind-speed"></span><span class=" h3  chronicle light-purple " <span id="wind-speed">mph</span></span>
-      </p>
+        <!-- <p> <span class=" h3 chronicle light-purple " <span id="condition-description"></span></span>
+      </p> -->
+
+        <p>winds <span class=" h3  chronicle light-purple " <span id="wind-speed"></span><span class=" h3  chronicle light-purple " <span id="wind-speed">mph</span></span>
+        </p>
+        <!-- <p>Wind Speed: <span class=" h3 pan chronicle light-purple " <span id="wind-speed"></span> mph</span>
+      </p> -->
+
+        <!-- <p> winds <span class=" h3  chronicle light-purple " <span id="wind-speed"></span><span class=" h3  chronicle light-purple " <span id="wind-speed">mph</span></span>
+      </p> -->
 
 
-    </div>
 
 
-    <div class=" order-0 order-1-1 w-third-l ml4-ns mr4-ns mr2 ml2 tl-l tc brown-small w-100-m  mb6-ns mb4 mt5-ns mt2-l hot-pink ml5-l">
-      <div class="dn-l outline light-purple bg-x pa2 mb4 color-grad">
+      </div>
+
+
+
+      <div class=" order-0 pt7-ns pt6 order-1-l w-third-l ml4-ns mr4-ns mr2 ml2 tl-l tc-m tc brown-small w-100-m mt2-l hot-pink ml3-l">
+        <!-- <div class="dn-l outline light-purple bg-x pa2 mb4 color-grad">
         .............................
-      </div>
+      </div> -->
 
-      <span class=" h3 green">
+        <!-- <span class=" h3 green">
         Temperature
-      </span>
-      <p>Current Temp: <span class=" h3 chronicle2 pan o-40 light-purple " <span id="temp"></span><span class=" h3 chronicle2 o-40 light-purple " <span id="temp">°</span></span>
-      </p>
-      <p>High: <span class="h3 chronicle light-purple " <span id="temp-max"></span>°</span>
-      </p>
-      <p>Low: <span class=" h3 chronicle light-purple " <span id="temp-min">°</span>°</span>
-      </p>
-      <div class="w-100 chronicle2">
-        <span id="temp"></span>
+      </span> -->
+        <p> <span class=" h3 chronicle2 tc pan o-40 light-purple " <span id="temp"></span><span class=" h3 chronicle2 o-40 light-purple " <span id="temp">°</span></span>
+        </p>
 
-      </div>
 
-      <!-- </div>  -->
+        <p> <span class="h3 chronicle tc light-purple " <span id="temp-max"></span><span class=" h3 chronicle light-purple " <span id="temp">° | </span></span>
 
-      <!-- <div class="w-100 brown-small hot-pink w-50-m w-third-l pa4">
+          <span class=" h3 chronicle tc light-purple " <span id="temp-min"></span><span class=" h3 chronicle light-purple " <span id="temp">°</span></span>
+        </p>
+        <div class="w-100 chronicle2">
+          <span id="temp"></span>
+
+        </div>
+
+        <!-- </div>  -->
+
+        <!-- <div class="w-100 brown-small hot-pink w-50-m w-third-l pa4">
         <span class=" h3 green">
           Weather
         </span>
@@ -114,15 +130,15 @@
         <p>Wind Speed: <span class=" h3 chronicle light-purple " <span id="wind-speed"></span> mph</span>
         </p>
       </div> -->
+        <!-- </div> -->
+      </div>
       <!-- </div> -->
     </div>
-    <!-- </div> -->
   </div>
-
   <!-- Site JavaScript -->
   <script src="/javascript/toggleClass.js" charset="utf-8"></script>
   <script src="/javascript/main.js" charset="utf-8"></script>
   <script src="/javascript/weather.js" charset="utf-8"></script>
-</body>
+  </body>
 
 </html>
