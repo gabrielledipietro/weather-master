@@ -317,11 +317,6 @@
   }
 }
 
-.rain .icon {
-  background-image: url(/images/rain-02.svg);
-  z-index: 4;
-}
-
 .warm {
   background: linear-gradient(to right, #ccfcb3, #f9f7c0);
 }
@@ -362,6 +357,17 @@
   height: 100%;
 }
 
+.rain .icon {
+  background-image: url(/images/rain-02.svg);
+  width: 100%;
+  height: 100%;
+  /* padding-top: 60px; */
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+}
+
 .clouds .icon {
   background-image: url(/images/clouds2-01.svg);
   /* display: block; */
@@ -384,19 +390,41 @@
   opacity: 40%;
   background-size: cover;
   background-position: center center;
-  /* background-repeat: repeat; */
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 /* still need to make icons */
 .thunderstorm .icon {
-  background-image: url(/images/sun-03.svg);
+  background-image: url(/images/thunder-09.svg);
+  width: 100%;
+  height: 100%;
+  /* padding-top: 60px; */
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
 }
 
 .drizzle .icon {
-  background-image: url(/images/sun-03.svg);
+  background-image: url(/images/rain-02.svg);
+  width: 100%;
+  height: 100%;
+  /* padding-top: 60px; */
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
 }
 
 .snow .icon {
-  background-image: url(/images/sun-03.svg);
+  background-image: url(/images/snow-04.svg);
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .atmosphere .icon {
